@@ -1,0 +1,140 @@
+vreau sa imi zici la c ul asta ca nu stiu cum sa veridic ce am facut
+
+pai zice sa apesi pe Menu mai intai, nu stiu unde e butonul asta
+pai un telefon android are trei butoane
+Back, Menu (butonul de Home de pe telefon) si ala care iti arata toate aplicatiile din background
+din mijloc, da
+si dupa stii sa faci?
+pai hai sa il fac acum 
+nu ai mai rulat pana acum?
+ba da, dar pe telefon acum zisei sa simulez pe calculator
+cred ca ar trebui instalat si haxm
+da il instalez
+
+
+gata se deschise
+mai esti?
+da
+era selectat telefonul da
+asa se face?
+
+pai nu faci pasii?
+1. Apesi Menu
+2. Dai terminate application
+3. Repornesti aplicatia din simulator
+pai ii facui dar trebuie sa vad ceva in logcat?
+pai probabil trebuie sa vezi ca se trece prin metodele alea mentionate acolo
+
+probabil trebuie sa te duci in metodele alea si sa loghezi ceva (un mesaj)
+si mesajul ar trebui dupa sa-l vezi in logcat
+
+Nu cred ca esti intr-o activitate acolo ca vezi ca iti aprare eroare la @Overri
+Stii sa citesti sau...
+Zicea ca onPause deja e definita
+Dar pare ca nu citesti mesajele de eroare, unde scrie 
+da
+Mai sunt inca 3 (in enunt mai erau 3, nu acolo) le facui 
+si pe onResotre?
+asa
+acum daca apesi pe Menu, aplicatia e bagata in background, deci ar trebui sa se apeleze onPause, nu? da
+Se apeleaza si onSaveInstaceState ca sa salveze starea curenta
+Onstop nu stiu cand se apeleaza
+porneste-o tu
+
+
+Log.d(Constants.TAG, "??? method was invoked");
+
+Intelegi? da
+intelesei asta mai citesc in lab cand se apeleaza onstop
+
+acum la D, nu stiu cum sa verific ce am facut  cred ca tot in 
+
+pai arata-mi unde e d
+
+
+si la D sa verific, e acolo descris dar nu am gasit pe ce sa apas
+
+sa apesi ce?
+
+
+intelesei ce scrie acolo 
+dar nu stiu cum sa tesetz ce scrisei acolo si dac amerge bine
+cred ca tot in logcat trebuie sa ma uit 
+      Thread.sleep(10000);
+ asta inseamna 10 secunde? da
+ 
+ probabil pui niste loguri acolo da
+ si filtrezi dupa tagul ala
+ si vezi ca apare un nou mesaj in logcat din 10 in 10 secunde
+
+la inceputul while-ului poti pune un log.d
+nu apare nimic
+
+
+pai pusei ca suma lor sa fie mai mare ca 10
+nu stiu cand ar trebui sa porneasca
+fai tu
+daca tot folosesti constante macar foloseste peste tot
+acum porneste?
+nu merge 
+nu mai merge, o sa oncerc pe telefon
+poate e de la ce mai scrisei eupoate porneste si se inchide 
+sa comentez ce scrisei sa vad
+pe telefon mi se deschide
+merge ceva?
+astept sa se deschida 
+face asta daca deschid eu alicatia si apas pe butone
+si acum trebuie sa apara Sendmessage o data la 10 secunde ca sa verifici ca merge
+simai apas?
+nu
+
+cand dai click si se indeplineste conditia aia cu suma
+se porneste un serviciu
+care din 10 in 10 secunde face ceva
+da merge
+
+
+bine, verifica si tu restul
+cum?
+
+
+
+Procesarea unui
+mesaj cu difuzare implică jurnalizarea sa în consolă, folosind o anumită etichetă.
+
+ce intelegi de aici? cred ca tot in logcat sa afisez din etichetle alea pe care i le dadui
+eticheta = tag
+
+cand dai Log.d("aici e tagul", "aici e mesajul");
+trebuie sa loghezi ceva, un mesaj
+
+    Log.d("[Message]", intent.getStringExtra("message"));
+
+    Vezi? da
+    
+    deci stii cum sa verifici
+    
+    fac un filtru si filtrez dupa el?
+    fai
+    
+    vezi ca daca tagul e de forma asta cu paranteze drepte trebuie sa debifezi regex ca altfel nu merge bine
+    pare ca tot ceva din 10 in 10 secunde se intampla da
+    acum dormi?
+    nu, de ce?
+    pai nu mai faci nimic
+    
+    daca intelesi asta treci mai departe
+    pai nu stiu ce trebuie sa mai fac
+    a pai la asta ma descurc
+    bine
+    atunci nu mai e nimic, o sa ma mai uit pe astea o data sa inteleg mai bine cu serviciile
+    
+    bine
+    din cate inteleg eu
+    1. Creezi serviciul care face ceva
+    2. Il pornesti din activitate cand dai click pe un buton sau ceva prin startService si ii pasezi niste date
+    
+    Cam asta ar fi
+
+
+
